@@ -4,9 +4,10 @@ import classNames from "classnames";
 import {CContainer, CRow, CCol, CCard, CCardBody} from '@coreui/react'
 
 
-const Sub = ({ children }) => {
+const Main = ({ children }) => {
     const classes = classNames(
         "overflow-auto",
+        "vh-100"
     );
 return(
     <>
@@ -16,4 +17,4 @@ return(
     </>
 )}
 
-export default Sub;  
+export default Main;  

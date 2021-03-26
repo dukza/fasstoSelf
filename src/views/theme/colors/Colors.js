@@ -1,4 +1,5 @@
 import React, { useEffect, useState, createRef } from 'react'
+import {useParams } from "react-router-dom";
 import classNames from 'classnames'
 import {
   CRow,
@@ -10,6 +11,7 @@ import {
 import { rgbToHex } from '@coreui/utils'
 import { DocsLink } from 'src/reusable'
 
+import {useData} from "./../../../hook/useData";
 
 const ThemeView = () => {
   const [color, setColor] = useState('rgb(255, 255, 255)')
@@ -20,7 +22,6 @@ const ThemeView = () => {
     const varColor = window.getComputedStyle(el).getPropertyValue('background-color')
     setColor(varColor)
   }, [ref])
-
   return (
     <table className="table w-100" ref={ref}>
       <tbody>
@@ -51,8 +52,28 @@ const ThemeColor = ({className, children}) => {
 const Colors = () => {
   return (
     <>
+          <CCol sm="12">필터바1</CCol>
+          <CCol sm="12">필터바2</CCol>    
+          <CCol sm="12 border position-absolute" style={{"top":"0px","bottom":"0px"}}>
+            <CRow className="no-gutters">
+              <CCol sm="12" className="overflow-auto position-absolute" >
+                      <div>
+                          
+                      </div>
+                      <div>버튼</div>
+                    <div style={{"height":"2000px"}}>1</div>
+              </CCol>                 
+            </CRow>
+          </CCol>    
 
-        <div style={{"height":"2000px"}}>1</div>
+
+
+           
+
+     
+
+
+        
     </>
   )
 }

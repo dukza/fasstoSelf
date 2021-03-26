@@ -5,9 +5,6 @@ import {CFade} from '@coreui/react'
 const AppRoute = ({
   component: Component,
   layout: Layout,
-  name,
-  title__L,
-  title__R,
   ...rest
 }) => {
   Layout = (Layout === undefined) ? props => (<>{props.children}</>) : Layout;
@@ -17,8 +14,7 @@ const AppRoute = ({
       render={(props) => {
         return(
         <CFade className="h-100">    
-          <Layout title__L={title__L} title__R={title__R} {...props}>
-            <Component />
+          <Layout {...props}>
           </Layout>
         </CFade>
       )

@@ -3,9 +3,6 @@ import {
   Redirect,
   Switch
 } from 'react-router-dom';
-import { CContainer } from '@coreui/react';
-import classNames from "classnames";
-
 // Component
 import AppRoute from './../utils/AppRoute';
 
@@ -31,11 +28,7 @@ const TheContent = () => {
                   key={idx}
                   path={route.path}
                   exact={route.exact}
-                  name={route.name}
-                  title__L={route.title__L}
-                  title__R={route.title__R}
                   layout={route.layout}
-                  component={route.component}
                 />
               )
             })}

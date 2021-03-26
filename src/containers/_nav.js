@@ -14,14 +14,14 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: '상품',
-    to: '/theme/colors',
+    name: '상품 등록',
+    to: '/enrollment',
     icon: 'cil-drop',
   },
   {
     _tag: 'CSidebarNavItem',
-    name: '입고',
-    to: '/theme/typography',
+    name: '상품 입고',
+    to: '/arrival',
     icon: 'cil-pencil',
   },
   {
